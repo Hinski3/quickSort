@@ -33,7 +33,7 @@ ll podziel(vector<ll> &v, ll l, ll r){
 
     while(1){
         while(v[++l] < pivot);
-        while(v[--r] < pivot);
+        while(v[--r] > pivot);
 
         if(l >= r) break;
         swap(v[l], v[r]);
